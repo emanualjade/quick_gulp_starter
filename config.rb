@@ -1,0 +1,10 @@
+# preferred_syntax = :sass
+# http_path = 'app'
+# css_dir = 'assets/stylesheets'
+# sass_dir = 'src/sass'
+images_dir = 'assets/img'
+images_path = 'app/assets/img'
+# javascripts_dir = 'assets/javascripts'
+# relative_assets = true
+# line_comments = true
+# output_style = :compressed

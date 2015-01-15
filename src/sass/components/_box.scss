@@ -1,0 +1,24 @@
+.box{
+  width: 200px;
+  height: 200px;
+  margin: 20px 0;
+  background: red;
+  @extend %transition-long;
+  &:hover{
+    background: blue;
+  }
+}
+
+.container-with-image{
+  width: 400px;
+  height: 400px;
+  @include background-image-2x("item", "png");
+  background-size: 100% auto;
+}
+
+.container-with-image-set{
+  width: 400px;
+  height: 400px;
+  background-size: 100% auto;
+  @include image-set("item", "png");
+}

@@ -1,0 +1,27 @@
+// Retina Background Image
+@mixin background-image-2x($filename, $extension) {
+
+  background-image: image_url($filename + "." + $extension);
+  background-repeat: no-repeat;
+  @media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2){
+    background-image: image_url($filename + "@2x" + "." + $extension);
+    @content;
+  }
+
+}
+// Mixin:           image-set
+// Description:     To support retina images
+// Example usage:   @include image-set("image", "jpg");
+@mixin image-set($filename, $extension) {
+    background-image: image_url($filename + "." + $extension);
+    background-image: -webkit-image-set(
+        image_url($filename + "." + $extension) 1x,
+        image_url($filename + "@2x" + "." + $extension) 2x
+    );
+    background-image: image-set(
+        image_url($filename + "." + $extension) 1x,
+        image_url($filename + "@2x" + "." + $extension) 2x
+    );
+}
+
+

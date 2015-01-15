@@ -1,0 +1,53 @@
+// ==========================
+// GLOBAL CONFIG
+// ==========================
+
+// Asset Paths
+$img-path: "../img/";
+
+// Font Stacks
+$font-url--google     : "http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800";
+$font-family--primary : "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family--secondary : "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-family-base: $font-family--primary;
+
+// Font Weights
+$font-weight--light : 300;
+$font-weight--normal : 400;
+$font-weight--semi-bold : 600;
+$font-weight--bold : 700;
+$font-weight--extra-bold : 800;
+
+$headings-font-weight: $font-weight--semi-bold;
+
+// Descriptive Base Colors
+// http://chir.ag/projects/name-that-color/#6195ED
+$boston-blue : #428bca;
+$fern : #5cb85c;
+$viking : #e67478;
+$sandy-brown : #f0ad4e;
+$roman : #d9534f;
+
+// Color Usage
+$brand-primary:         darken($boston-blue, 6.5%);
+$brand-success:         $fern;
+$brand-info:            $viking;
+$brand-warning:         $sandy-brown;
+$brand-danger:          $roman;
+
+// UI Colors
+$body-bg: #fff;
+
+// Buttons
+$btn-test-color: white;
+$btn-test-bg: indianred;
+$btn-test-border: darken(indianred, 10%);
+
+
+// Grid system
+//** Number of columns in the grid.
+$grid-columns:              16;
+$grid-gutter-width:         30px;
+// Large screen / wide desktop
+$container-large-desktop:      (1470px + $grid-gutter-width);

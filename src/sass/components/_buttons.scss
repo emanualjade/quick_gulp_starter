@@ -1,0 +1,3 @@
+.btn-test {
+  @include button-variant($btn-test-color, $btn-test-bg, $btn-test-border);
+}
